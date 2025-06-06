@@ -7,36 +7,52 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    height: 60px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 700;
-}
-
-nav a:hover,
-nav a.active {
-    text-decoration: underline;
-}
-
 main {
     padding: 2rem;
 }
 
+/* ===== Updated header and navigation styles ===== */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, Title, Nav */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0077b6;
+    color: white;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Hero section (keep from old CSS if you use it) */
 .hero {
     text-align: center;
 }
@@ -57,40 +73,62 @@ main {
     margin-bottom: 0.5rem;
 }
 
+/* History section */
 .history {
     margin-top: 3rem;
 }
 
-.gallery {
-    margin-top: 3rem;
-}
-
-.gallery-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/* ===== Adventures gallery styles ===== */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
-.gallery-images img {
+.adventure-gallery figure {
+    flex: 1 1 18%;
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #023e8a;
+}
+
+/* ===== Footer styles with right-aligned social icons ===== */
 footer {
     background-color: #023e8a;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.social-links {
-    margin-top: 0.5rem;
+footer nav {
+    display: flex;
+    gap: 1rem;
 }
 
-.social-links img {
+footer nav img {
     width: 30px;
-    margin: 0 10px;
-    vertical-align: middle;
+    height: auto;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+footer nav img:hover {
+    transform: scale(1.2);
 }
