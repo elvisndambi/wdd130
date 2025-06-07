@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rafting Wilfrid Company for questions, reservations, and more.">
+    <meta name="author" content="Elvis Ndambi">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us | Rafting Wilfrid Company</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<header>
+    <img src="images/wwr.logo.png" alt="Rafting Company Logo">
+    <h1>Rafting Wilfrid Company</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 River Road, Adventure City, Country</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Email:</strong> info@raftingwilfrid.com</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!..." 
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Rafting Wilfrid Location">
+        </iframe>
+    </section>
+
+    <section class="employees">
+        <h2>Meet Our Team</h2>
+        <figure>
+            <img src="images/employee1.jpg" alt="Jane Doe, Lead Guide">
+            <figcaption>Jane Doe - Lead Guide</figcaption>
+        </figure>
+        <figure>
+            <img src="images/employee2.jpg" alt="John Smith, Safety Officer">
+            <figcaption>John Smith - Safety Officer</figcaption>
+        </figure>
+        <figure>
+            <img src="images/employee3.jpg" alt="Emily Johnson, Customer Service">
+            <figcaption>Emily Johnson - Customer Service</figcaption>
+        </figure>
+    </section>
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Purpose of Message:</legend>
+                <label for="general"><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+                <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+                <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+            </fieldset>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+            <button type="submit" aria-label="Submit contact form">Send Message</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Rafting Wilfrid Company | All rights reserved</p>
+    <nav class="social-links">
+        <a href="https://m.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/FBK.Logo.png" alt="Facebook page of Rafting Wilfrid Company">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <img src="images/Inst.Logo.png" alt="Instagram page of Rafting Wilfrid Company">
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="Twitter/X">
+            <img src="images/X.Logo.png" alt="Twitter page of Rafting Wilfrid Company">
+        </a>
+    </nav>
+    <p><a href="https://link-to-your-wireframe" target="_blank" rel="noopener">View Contact Page Wireframe</a></p>
+</footer>
+</body>
+</html>

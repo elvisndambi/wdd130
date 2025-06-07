@@ -132,3 +132,58 @@ footer nav img {
 footer nav img:hover {
     transform: scale(1.2);
 }
+
+.contact-info,
+.employees,
+.contact-form {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.employees figure {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.employees img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form fieldset,
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: inherit;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005fa3;
+}
