@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navigation */
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Headings */
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Images */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content */
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraphs */
+p {
+    padding: 10px;
+    line-height: 1.6;
+}
+
+/* Aside Section */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #000;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    aside {
+        width: auto;
+        padding: 1rem;
+    }
+}
